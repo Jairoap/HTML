@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+    <style>
+        
+        h1{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 100px;
+        }
+
+        ul li{
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul li:nth-child(odd){
+            /* color: red; */
+        }
+
+        nav{
+            margin-left: 50%;
+            transform: translate(-50%);
+        }
+
+       nav li{
+           list-style-type: none;
+           display:table-cell;
+           padding: 10px 25px;
+           background-color:#484040;
+           color: white;
+           transition: all 0.3s linear;
+       }
+       nav li a{
+        color: white;
+       }
+       nav li:hover{
+           background-color: green;
+           cursor: pointer;
+         
+       }
+        
+         
+    </style>
+</head>
+<body>
+    <header>
+        <h1 title="Título principal da página">Imagens Dinâmicas</h1>
+    </header>
+
+    <nav>
+        <ul id="meses">
+            <li><a href="https://www.uol.com.br" target="_blank" title="Site do UOL"> UOL </a></li>
+            <li><a href="#"> Fevereiro </a></li>
+            <li>Março</li>
+            <li>Abril</li>
+            <li>Maio</li>
+        </ul>
+    </nav>
+
+
+    
+    
+
+
+</body>
+</html>

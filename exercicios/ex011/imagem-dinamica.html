@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <!-- Faz o papel do media query-->
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png"> 
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+
+        <h1>Reproduzindo Áudio</h1>
+
+        <p> Vamos aprender a reproduzir áudio em HTML5.</p>
+        <audio src="midia/Dire-Straits-Sultans-O-Swing.mp3" controls ></audio> 
+         
+        <br> <br> <br>
+
+        <!-- Uma forma de fazer o arquivo carregar em vários tipos de navagadores -->
+        <audio controls autoplay>
+            <source src="midia/Voices-Patrick-Patrikios.mp3" type="audio/mpeg">
+            <source src="midia/Voices-Patrick-Patrikios.ogg" type="audio/ogg">
+            <source src="midia/Voices-Patrick-Patrikios.wav" type="audio/wav">
+                <!-- Caso não abra no navegador -->
+                <p>Seu navegador é incompatível com o áudio. <a href="midia/Voices-Patrick-Patrikios.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+        </audio>
+
+        
+        <i class="fas fa-phone-rotary"></i>
+
+
+
+</body>
+</html>

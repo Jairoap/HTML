@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.basico{
+     color: rgba(19, 87, 19, 0.596);
+}
+
+.intermediario{
+    color: rgb(100, 88, 173);
+}
+
+.avancado{
+    color: rgb(218, 98, 148);
+}
+
+.destaque{
+    background-color: rgb(60, 219, 28);
+    /* padding: 3px 3px 0 3px; */
+}
