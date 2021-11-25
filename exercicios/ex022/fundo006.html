@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background</title>
+    <title>Background Fixo</title>
     <style>
         body{
             height: 100vh;
@@ -13,11 +13,23 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;  
+
+            /* Shorthand - ackground
+            
+                color > image > position > repeat > size > attachment
+                
+                background: gray url('imagens/wallpaper002.jpg') center center no-repeat fixed; 
+                
+                OBS: O BACKGROUND-SIZE:COVER TEM QUE SER COLOCADO À PARTE PRA FUNCIONAR 
+
+              */
+          
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
