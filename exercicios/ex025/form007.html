@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Estudo de Formulários</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="estado">Estado: </label>
+            <select name="estado" id="estado">
+                <option value="" selected>---- Escolha ----</option>
+                <optgroup label="Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="PE">Pernambuco</option>
+               </optgroup>
+                
+               <optgroup label="Sudeste">                 
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+               </optgroup>
+                
+               <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+               </optgroup>
+                
+            </select>
+        </p>
+
+        <p>
+            <label for="profissao">Profissão: </label>
+            <input type="text" name="profissao" id="profissao" list="lista_profissoes">
+
+            <datalist id="lista_profissoes">
+                <option >Administrador</option> <!-- Retirei o "value" porque tava selecionando ele -->
+                <option >Contador</option>
+                <option >Desenvolvedor</option>
+                <option >Professor</option>
+            </datalist>
+        </p>
+        
+        <!-- Se tem textarea, o method tem que ser POST pela limitação de caracteres que tem o GET -->
+        <p> 
+            <label for="msg">Mensagem: </label><br>
+            <textarea name="msg" id="msg" cols="40" rows="9"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
