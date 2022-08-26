@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*
+Telas pequenas: até 600px
+celular: 600px a 768px
+Tablet: 768px a 992px
+Desktop: 992px a 1200px
+Telas Grandes: acima de 1200px 
+*/
+
+@media screen and (min-width: 768px){
+    #burger{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    
+    }
+
+    main{
+        max-width: 1100px;
+    }
+}
